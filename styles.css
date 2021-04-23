@@ -1,0 +1,304 @@
+html,body{
+  margin:0;
+  height: 100%;
+}
+body {
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body#about {
+  background: #f1f2f6;
+  margin:0;
+  height: 100%;
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#navbar {
+  margin: 0;
+}
+
+.tag {
+  font-weight: bold;
+  font-family: cursive;
+  color:black;
+  margin-right: 1.875rem;
+  font-size: 1.4rem;
+}
+.carousel-item p{
+  font-size: 1.5rem;
+}
+
+
+#carousel {
+  margin-bottom: 1.75rem;
+}
+
+.card-deck {
+  margin-left: 1.875rem;
+}
+.why-us{
+  align-items: center;  
+  margin-left: 8.5rem;
+  padding: 3rem  5rem;
+}
+
+.why-us h2{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 650;
+  
+}
+.why-us p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.4rem;
+}
+
+#blog {
+  text-align: center;
+  color: white;
+  background:url('utils/img7.jpg');
+}
+#blog .stream {
+  font-size: 1.125rem
+}
+
+#news {
+  background: rgb(211, 210, 212);
+  text-align: center;
+  color: black;
+}
+#news h1{
+  font-family:cursive;
+}
+
+
+
+/* About page styles */
+
+#magic-name .about-name {
+  color:#1634af;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+#who-we-are {
+  margin: 3rem;
+  margin-bottom: 0;
+
+}
+
+#who-we-are h2 {
+  color: #333;
+  font-size: 2.8rem;
+  font-weight: 500;
+  padding: 0 7rem;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+  #who-we-are.description {
+  align-items: center;
+  text-align: center;
+  padding:2rem;
+  }
+
+#who-we-are p {
+  color:black;
+  font-size: 1.4rem;
+  font-family: serif;
+}
+
+#who-we-are img {
+margin-top: -8rem;
+
+}
+#who-we-are a {
+  margin-bottom: 1rem;
+  
+  }
+#what-we-do {
+  background: url('utils/shoe\ making.jpg') center center no-repeat;
+  background-size: cover;
+  padding: 5rem 0  ;
+
+}
+
+#what-we-do p {
+  font-size: 1.35rem
+}
+
+#what-we-do .about-text {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 1.875rem;
+}
+
+#details {
+  margin-bottom: 1.87rem;
+
+}
+
+#details .testimonial {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin:0.625rem 0;
+}
+
+
+.details-content {
+  text-align: center;
+  padding:4rem;
+
+}
+
+#vow {
+  text-align: center;
+}
+
+#vow h1 {
+  font-family: monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #eb2f06;
+  text-shadow: 2px 2px black;
+
+}
+
+#vow p {
+  font-size: 1.875rem;
+}
+
+
+/* Contact page styles */
+
+#contact-field{
+  background: url('utils/callcenter.jpg') center center no-repeat ;
+  background-size: cover ;
+  color: black;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+#contact-details {
+  font-size: 1.8rem;
+  font-family: monospace;
+  font-weight: 600;
+  max-width: 60rem;
+  margin: auto 0 ;
+  padding: 4rem;
+}
+
+#conversation {
+  font-size: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+
+
+iframe {
+  margin-top: 1.2rem;
+}
+
+#table-field {
+  margin-bottom: 1.875rem;
+}
+
+/* Services Page */
+
+#service-stage {
+  background: url('utils/our_services_background.jpg') center center no-repeat;
+  background-size: cover;  
+  height: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.125rem;
+  box-shadow:inset 0 0 0 2000px rgba(15, 1, 9,0.5);  
+
+}
+.service-content{
+  color: white;
+  margin:  0 auto ;
+  padding: 4rem;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.service-content .bigger {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.service-content .big {
+  font-size: 1.456rem;
+  font-weight: 200;
+}
+.service-content span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.all-services {
+  margin: 25px;
+  padding: 15px;
+}
+
+.all-services .card-title {
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(53, 64, 168);
+  font-family: monospace;
+}
+
+.all-services .card-text {
+  font-size: 20px;
+  font-weight: 300;
+  color: #333;
+}
+
+.other-note-text{
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+ }
+ 
+ .other-note h4{
+  font-style: oblique;
+}
+.other-note h2{
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+
+.other-note img{
+ margin-top: -40px;
+ margin-left: -60px;
+}
+
+#footer {
+  margin: 0;
+  color: white;
+  background: #1e3799;
+  padding: 2rem;
+}
+ #footer h5,p{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ #footer a {
+   color:white;
+ }
+
+ @media (max-width:629px) {
+  img#optional-img {
+    display: none;
+  }
+} 
