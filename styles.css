@@ -5,71 +5,94 @@ html,body{
 body {
   -webkit-font-smoothing:antialiased;
   text-rendering: optimizeLegibility;
+  font-family: 'Playfair Display', serif;
 }
 
 body#about {
   background: #f1f2f6;
   margin:0;
   height: 100%;
+  font-family: 'Playfair Display', serif;
   -webkit-font-smoothing:antialiased;
   text-rendering: optimizeLegibility;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Inconsolata', monospace;
 }
 
 #navbar {
   margin: 0;
 }
 
+#navbar a {
+  color: white;
+}
+
+#navbar .dropdown-item {
+  color: black;
+}
+
 .tag {
   font-weight: bold;
-  font-family: cursive;
-  color:black;
+  color:white;
   margin-right: 1.875rem;
   font-size: 1.4rem;
 }
-.carousel-item p{
+/* .carousel-item p{
   font-size: 1.5rem;
-}
+} */
+/* #carousel .item {height: 400px;} */
 
-
+/* .carousel-caption {
+  display: flex;
+  align-items: center;
+} */
+/* 
 #carousel {
   margin-bottom: 1.75rem;
-}
+  
+} */
 
 .card-deck {
-  margin-left: 1.875rem;
+  margin-top: 2rem;
+  padding: 1.rem 0;
+}
+
+#details .card-text {
+  font-size: 20px;
 }
 .why-us{
   align-items: center;  
-  margin-left: 8.5rem;
-  padding: 3rem  5rem;
+  margin-left: 0;
+  padding: 3rem 0;
 }
 
-.why-us h2{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: 650;
+.why-us h3{
+  font-weight: 600;
   
 }
 .why-us p {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 #blog {
   text-align: center;
   color: white;
+  padding: 2rem 0;
   background:url('utils/img7.jpg');
+  box-shadow:inset 0 0 0 2000px rgba(15, 1, 9,0.5);  
+
 }
 #blog .stream {
-  font-size: 1.125rem
+  font-size: 1.3rem
 }
 
 #news {
   background: rgb(211, 210, 212);
   text-align: center;
   color: black;
-}
-#news h1{
-  font-family:cursive;
+  padding: 2rem;
 }
 
 
@@ -98,7 +121,6 @@ body#about {
   font-weight: 500;
   padding: 0 7rem;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -111,15 +133,14 @@ body#about {
 #who-we-are p {
   color:black;
   font-size: 1.4rem;
-  font-family: serif;
 }
 
 #who-we-are img {
-margin-top: -8rem;
+margin-top: -6rem;
 
 }
 #who-we-are a {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   
   }
 #what-we-do {
@@ -145,7 +166,6 @@ margin-top: -8rem;
 }
 
 #details .testimonial {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   margin:0.625rem 0;
 }
@@ -162,7 +182,6 @@ margin-top: -8rem;
 }
 
 #vow h1 {
-  font-family: monospace;
   font-weight: 700;
   text-transform: uppercase;
   color: #eb2f06;
@@ -190,7 +209,6 @@ margin-top: -8rem;
 
 #contact-details {
   font-size: 1.8rem;
-  font-family: monospace;
   font-weight: 600;
   max-width: 60rem;
   margin: auto 0 ;
@@ -199,7 +217,6 @@ margin-top: -8rem;
 
 #conversation {
   font-size: 2rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   margin-bottom: 3.125rem;
 }
@@ -229,7 +246,6 @@ iframe {
   color: white;
   margin:  0 auto ;
   padding: 4rem;
-  font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -256,7 +272,6 @@ iframe {
   font-size: 40px;
   font-weight: 500;
   color: rgb(53, 64, 168);
-  font-family: monospace;
 }
 
 .all-services .card-text {
@@ -274,10 +289,6 @@ iframe {
  .other-note h4{
   font-style: oblique;
 }
-.other-note h2{
-  font-family:Verdana, Geneva, Tahoma, sans-serif ;
-}
-
 
 .other-note img{
  margin-top: -40px;
@@ -288,17 +299,108 @@ iframe {
   margin: 0;
   color: white;
   background: #1e3799;
-  padding: 2rem;
 }
- #footer h5,p{
-   font-family: Georgia, 'Times New Roman', Times, serif;
- }
+
  #footer a {
    color:white;
  }
 
- @media (max-width:629px) {
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+   
+   /*  Small devices (landscape phones, 576px and up) */
+   @media (min-width: 576px) { 
+   
+
+     body {
+       padding: 0 1rem;
+     } 
+
+    .carousel-caption p {
+      font-size: 22px;
+    }
+
+    .carousel-caption h4   {
+      font-weight: 400;
+    }
+
+    #footer {
+      padding: 2rem 0;
+    }
+
+   }  
+   
+    /* Medium devices (tablets, 768px and up) */
+   @media (min-width: 768px) { 
+    /* #crousel .item {height: 500px;} */
+
+  
+
+    .carousel-caption p{
+      font-size: 25px
+    }
+
+    .carousel-caption h4 {
+      font-weight: 600;
+    }
+
+    body {
+      padding: 0 2rem;
+    } 
+
+
+    #footer {
+      padding: 1.5rem 0;
+    }
+    }
+   
+    /* Large devices (desktops, 992px and up) */
+   @media (min-width: 992px) { 
+    /* #carousel .item {height: 500px;} */
+
+    .carousel-caption p{
+      font-size: 30px;
+    }
+
+    .carousel-caption h4  {
+      font-weight: 1000;  
+      font-size: 40px;
+    
+    }
+
+    .why-us{
+      align-items: center;  
+      margin-left: 0;
+      padding: 4rem 0;
+    }
+    body {
+      padding: 0 3rem;
+    } 
+
+    #footer {
+      padding-top: 2rem ;
+      padding-bottom: 1rem;
+    }
+    }
+   
+    /* Extra large devices (large desktops, 1200px and up) */
+   @media (min-width: 1200px) {  }
+
+
+
+
+
+
+
+
+
+
+
+
+ /* @media (max-width:629px) {
   img#optional-img {
     display: none;
-  }
-} 
+  } */
+ 
